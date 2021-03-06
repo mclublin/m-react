@@ -2,11 +2,11 @@ import React, {useState} from "react";
 
 const FormularzKontakotwy = () => {
 
-  const [kontaktImie,setKontaktImie] = useState("");
+  const [kontaktImie,setKontaktImie] = useState("Michał");
   const [kontaktNazwisko,setKontaktNazwisko] = useState("");
   const [kontaktEmail,setKontaktEmail] = useState("");
   const [kontaktTelefon,setKontakTelefon] = useState("");
-  const [kontaktPlec,setKontaktPlec] = useState("M");
+  const [kontaktPlec,setKontaktPlec] = useState("K");
   const [kontaktZgodyMarketingowe,setKontaktZgodyMarketingowe] = useState("");
   const [kontaktZgodaRodo,setKontaktZgodaRodo] = useState("");
 
@@ -70,13 +70,14 @@ const FormularzKontakotwy = () => {
         <br />
         <label>
           <input type="radio" name="kontaktPlec" value="K" 
-          {kontaktPlec =="K" ? "checked" : ""}
+        {...kontaktPlec =="K" ? " checked " : ""}
           onChange={handlerOnChangeKontakt}/>
           Kobieta
         </label>
         <br />
         <label>
-          <input type="radio" name="kontaktPlec" value="M" 
+          <input type="radio" name="kontaktPlec" value="M"
+          {...kontaktPlec =="M" ? " checked " : ""} 
           onChange={handlerOnChangeKontakt}/>
           Mężczyzna
         </label>
