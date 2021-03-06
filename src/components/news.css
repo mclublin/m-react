@@ -1,0 +1,31 @@
+#newsletter {
+  background-color: white;
+  color: rgb(11, 11, 17);
+  font-size: 0.8em;
+}
+#newsletter label {
+  font-weight: 200;
+  color: rgb(0, 0, 0);
+  font-stretch: ultra-condensed;
+}
+#signin {
+  background-color: rgba(112, 112, 255, 0.705);
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  padding: 0.3em;
+  margin-left: 0.1em;
+}
+
+fieldset {
+  border: 1px dotted;
+}
+#signin:hover {
+  color: rgba(112, 112, 255, 0.705);
+  background-color: white;
+  border: 1px solid rgba(112, 112, 255, 0.705);
+  border-radius: 0.3em;
+  padding: 0.3em;
+  margin-left: 0.1em;
+  font-weight: bold;
+}
